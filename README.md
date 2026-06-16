@@ -22,7 +22,7 @@ cd VIBE
 pip install -e .
 ```
 
-Dependencies: `numpy`, `scipy`, `torch`, `matplotlib`, `joblib`, `tqdm`. Pitch estimation in the example notebooks additionally uses [`noisereduce`](https://github.com/timsainb/noisereduce) and the segmentation step uses [`vocalization-segmentation`](https://github.com/timsainb/vocalization-segmentation).
+Dependencies: `numpy`, `scipy`, `torch`, `matplotlib`, `joblib`, `tqdm`. Pitch estimation in the example notebooks optionally uses [`noisereduce`](https://github.com/timsainb/noisereduce) and the segmentation step uses [`vocalization-segmentation`](https://github.com/timsainb/vocalization-segmentation).
 
 
 ## Usage

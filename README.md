@@ -55,7 +55,7 @@ rec_wav = synthesize_song(alpha, beta, fs_audio, len(waveform))
 
 ## Example notebooks
 
-The `examples/` directory contains notebooks demonstrating segmentation, fitting, and resynthesis on example song.
+The `examples/` directory contains notebooks demonstrating segmentation, fitting, and resynthesis on example songs from three birds.
 
 ## Citation
 

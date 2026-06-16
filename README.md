@@ -30,7 +30,7 @@ Dependencies: `numpy`, `scipy`, `torch`, `matplotlib`, `joblib`, `tqdm`. Pitch e
 ### Fit a song
 
 ```python
-from VIBE import song_to_parameters
+from vibe import song_to_parameters
 
 alpha, beta, fit_result = song_to_parameters(
     waveform,        # 1D audio waveform
@@ -48,7 +48,7 @@ alpha, beta, fit_result = song_to_parameters(
 ### Resynthesize from parameters
 
 ```python
-from VIBE import synthesize_song
+from vibe import synthesize_song
 
 rec_wav = synthesize_song(alpha, beta, fs_audio, len(waveform))
 ```

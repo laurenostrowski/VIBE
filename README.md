@@ -71,4 +71,7 @@ The underlying biomechanical model is described in:
 
 ## License
 
-[License, e.g. MIT.]
+VIBE is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+Copyright (c) 2026 Lauren Ostrowski
+

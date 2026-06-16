@@ -61,7 +61,7 @@ The `examples/` directory contains notebooks demonstrating segmentation, fitting
 
 If you use VIBE, please cite:
 
-> LM Ostrowski, JM Méndez, PM Tostado, BG Cooper, TQ Gentner. Automated inference of respiratory and syringeal movement trajectories from birdsong acoustics. *biorxiv* (2026).
+> Ostrowski LM, Méndez JM, Tostado PM, Cooper BG, Gentner TQ. Automated inference of respiratory and syringeal movement trajectories from birdsong acoustics. *biorxiv* (2026).
 
 The underlying biomechanical model is described in:
 

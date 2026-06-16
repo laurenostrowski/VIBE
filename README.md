@@ -1,12 +1,12 @@
 # VIBE
 **V**ocal acoustic **I**nversion to **B**iomechanical **E**stimates
 
-VIBE fits a biomechanical model of the zebra finch (*Taeniopygia guttata*) vocal organ to recorded song, recovering two time-varying control parameters from the acoustic waveform alone:
+VIBE reconstructs the time-dependent control parameters of a biomechanical model of the zebra finch (Taeniopygia guttata) syrinx directly from recorded song, recovering the physiological instructions underlying vocal production:
 
-- **α(t)** — a proxy for air sac pressure
-- **β(t)** — a proxy for syringeal muscle tension
+- **α(t)** — air sac pressure
+- **β(t)** — syringeal muscle tension
 
-The model inverts the recorded song through the nonlinear syringeal-source-and-vocal-tract equations of Perl et al. (2011) and the SNILC-bounded parameter space of Amador et al. (2013), so that the raw waveform is mapped back to the motor coordinates that produced it.
+These parameters are the coupled inputs to a nonlinear oscillator model of the syrinx ([Perl et al. 2011](https://doi.org/10.1103/physreve.84.051909); [Amador et al. 2013](https://doi.org/10.1523/JNEUROSCI.5906-12.2013)).
 
 ## Installation
 

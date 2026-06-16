@@ -6,7 +6,7 @@ VIBE reconstructs the time-dependent control parameters of a biomechanical model
 - **α(t)** — air sac pressure
 - **β(t)** — syringeal muscle tension
 
-These parameters are the coupled inputs to a nonlinear oscillator model of the syrinx ([Perl et al. 2011](https://doi.org/10.1103/physreve.84.051909); [Amador et al. 2013](https://doi.org/10.1523/JNEUROSCI.5906-12.2013)).
+These parameters are the coupled inputs to a nonlinear oscillator model of the syrinx ([Perl et al. 2011](https://doi.org/10.1103/physreve.84.051909); [Amador et al. 2013](https://doi.org/10.1038/nature11967)).
 
 ## Installation
 

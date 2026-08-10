@@ -61,18 +61,7 @@ The `examples/` directory contains notebooks demonstrating segmentation, fitting
 
 If you use this code, please cite:
 
-Ostrowski LM, Méndez JM, Tostado-Marcos P, Cooper BG, Gentner TQ. Automated inference of respiratory and syringeal biomechanical trajectories from birdsong acoustics. *bioRxiv* 2026.08.03.742634 (2026). https://doi.org/10.64898/2026.08.03.742634
-
-```bibtex
-@article{ostrowski2026vibe,
-  title   = {Automated inference of respiratory and syringeal biomechanical trajectories from birdsong acoustics},
-  author  = {Ostrowski, Lauren M. and M{\'e}ndez, Jorge M. and Tostado-Marcos, Pablo and Cooper, Brenton G. and Gentner, Timothy Q.},
-  journal = {bioRxiv},
-  year    = {2026},
-  doi     = {10.64898/2026.08.03.742634},
-  url     = {https://doi.org/10.64898/2026.08.03.742634}
-}
-```
+> Ostrowski LM, Méndez JM, Tostado-Marcos P, Cooper BG, Gentner TQ. Automated inference of respiratory and syringeal biomechanical trajectories from birdsong acoustics. *bioRxiv* 2026.08.03.742634 (2026). https://doi.org/10.64898/2026.08.03.742634
 
 The underlying biomechanical model is described in:
 

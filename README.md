@@ -27,6 +27,45 @@ Dependencies: `numpy`, `scipy`, `torch`, `matplotlib`, `joblib`, `tqdm`. Pitch e
 
 ## Usage
 
+### Pitch extraction parameters
+
+Pitch extraction is the one stage in the pipeline that benefits from per-bird tuning. 
+`get_pitch` selects a fundamental ateach frame by Viterbi decoding over prominent 
+spectral peaks, and the scoring termsthat resolve the fundamental against its 
+harmonics depend on the frequency rangeand harmonic structure of the individual bird. 
+Defaults are reasonable for most birds. Tune once per bird on a few representative 
+songs, then hold the settings fixed across that bird's corpus.
+
+Settings are passed to `song_to_parameters` through `pitch_kwargs` and forwarded
+to `get_pitch`:
+
+```python
+pitch_kwargs = {
+    'f0_min': 300.0,           # lower bound of the f0 search (Hz)
+    'f0_max': 4000.0,          # upper bound of the f0 search (Hz)
+    'freq_boost_exp': 5.0,     # raise to favor lower peaks (default 1.0)
+    'harmonic_bonus': 5.0,     # raise when harmonic stacks are strong (default 5.0)
+    'min_prominence_db': 1.0,  # lower when peaks are weak (default 5.0)
+}
+```
+
+
+To tune, call `get_pitch` directly and plot the contour over the spectrogram:
+
+```python
+from vibe import get_pitch
+
+pitch, mag_db, freqs, times = get_pitch(
+    waveform, vmask, fs_audio, hop_length, win_length, n_fft, **pitch_kwargs)
+
+ax.imshow(mag_db, aspect='auto', origin='lower', cmap='gray_r',
+          extent=[times[0], times[-1], freqs[0], freqs[-1]],
+          vmin=np.percentile(mag_db, 10), vmax=0.98 * np.max(mag_db))
+ax.plot(times, pitch, 'magenta', lw=3, alpha=0.7)
+```
+
+`examples/fit_VIBE.ipynb` demonstrates this step for bird A.
+
 ### Fit a song
 
 ```python

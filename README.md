@@ -38,9 +38,9 @@ to `get_pitch`:
 pitch_kwargs = {
     'f0_min': 300.0,           # lower bound of the f0 search (Hz)
     'f0_max': 4000.0,          # upper bound of the f0 search (Hz)
-    'freq_boost_exp': 5.0,     # raise to favor lower peaks (default 1.0)
+    'freq_boost_exp': 1.0,     # raise to favor lower peaks (default 1.0)
     'harmonic_bonus': 5.0,     # raise when harmonic stacks are strong (default 5.0)
-    'min_prominence_db': 1.0,  # lower when peaks are weak (default 5.0)
+    'min_prominence_db': 5.0,  # lower when peaks are weak (default 5.0)
 }
 ```
 

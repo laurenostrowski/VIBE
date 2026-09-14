@@ -59,7 +59,7 @@ ax.imshow(mag_db, aspect='auto', origin='lower', cmap='gray_r',
 ax.plot(times, pitch, 'magenta', lw=3, alpha=0.7)
 ```
 
-`examples/fit_VIBE.ipynb` demonstrates this step for bird A.
+`examples/fit_VIBE.ipynb` demonstrates this step for an example bird.
 
 ### Fit a song
 

@@ -29,12 +29,7 @@ Dependencies: `numpy`, `scipy`, `torch`, `matplotlib`, `joblib`, `tqdm`. Pitch e
 
 ### Pitch extraction parameters
 
-Pitch extraction is the one stage in the pipeline that benefits from per-bird tuning. 
-`get_pitch` selects a fundamental ateach frame by Viterbi decoding over prominent 
-spectral peaks, and the scoring termsthat resolve the fundamental against its 
-harmonics depend on the frequency rangeand harmonic structure of the individual bird. 
-Defaults are reasonable for most birds. Tune once per bird on a few representative 
-songs, then hold the settings fixed across that bird's corpus.
+Pitch extraction is the one stage in the pipeline that benefits from per-bird tuning. `get_pitch` selects a fundamental at each frame by Viterbi decoding over prominent spectral peaks, and the scoring terms that resolve the fundamental against its harmonics depend on the frequency range and harmonic structure of the individual bird. Defaults are reasonable for most birds. Tune once per bird on a few representative songs, then hold the settings fixed across that bird's corpus.
 
 Settings are passed to `song_to_parameters` through `pitch_kwargs` and forwarded
 to `get_pitch`:
